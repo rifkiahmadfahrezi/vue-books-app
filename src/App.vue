@@ -1,9 +1,9 @@
-<script lang="ts">
+<script lang="ts" setup>
   import { RouterView } from 'vue-router';
+  import { Toaster } from './components/ui/sonner';
 </script>
 
 <template>
-  <main>
-    <RouterView/>
-  </main>
+  <Toaster />
+  <RouterView  />
 </template>
