@@ -10,7 +10,7 @@
      </div>
      <div class="">
       <DashboardNav />
-      <main>
+      <main class="p-5" >
         <RouterView />
       </main>
      </div>
