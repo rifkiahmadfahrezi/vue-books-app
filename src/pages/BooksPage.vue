@@ -2,7 +2,7 @@
 import { Card, CardContent, CardTitle } from '../components/ui/card';
 import { Skeleton } from '../components/ui/skeleton';
 import { RouterLink } from 'vue-router';
-import { Star, BookAudioIcon } from 'lucide-vue-next';
+import { Star, BookAudioIcon,PencilLine } from 'lucide-vue-next';
 
 import CLIENT from '../service/apiClient';
 import { ref } from 'vue'
@@ -74,6 +74,12 @@ fetchData()
                 <BookAudioIcon class="size-5 "  />
                 <span>
                   {{ book.pages }}
+                </span>
+              </p>
+              <p class="flex items-center gap-1"> 
+                <PencilLine class="size-5 "  />
+                <span>
+                  {{ book.author.name }}
                 </span>
               </p>
             </div>
