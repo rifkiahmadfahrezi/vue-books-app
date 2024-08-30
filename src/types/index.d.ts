@@ -12,9 +12,9 @@ export interface Book extends Model{
    title: string
    cover ?: string
    pages: number
-   authorId: string | number
    rating: number
    sysnopsis ?: sting | null
+   author:Author
 }
 
 export interface ResponseAPI {
