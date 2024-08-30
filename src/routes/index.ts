@@ -41,8 +41,16 @@ const routes : Array<RouteRecordRaw> = [
          },
          {
             path: 'books',
-            component: () => import("../pages/BooksPage.vue"),
-         }
+            component: () => import("../pages/Dashboard/Books.vue"),
+         },
+         {
+            path: 'authors',
+            component: () => import("../pages/Dashboard/Authors.vue"),
+         },
+         {
+            path: 'users',
+            component: () => import("../pages/Dashboard/Users.vue"),
+         },
       ]
    },
 ]
